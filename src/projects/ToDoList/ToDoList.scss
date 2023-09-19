@@ -1,0 +1,150 @@
+@import "../../utils/_variables.scss";
+@import "../../utils/_layout-mixins.scss";
+
+
+.todoApp {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 5px;
+    padding: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: $card-bg;
+
+}
+
+.todolist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    margin: 0;
+
+    &__header {
+        text-align: center;
+        width: 50vw;
+        padding-bottom: 25 px;
+        margin-bottom: 25px;
+        color: $header-text;
+        text-transform: uppercase;
+    }
+}
+
+
+.todo {
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin: 25px 0;
+    }
+
+    &__list {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $card-bg;
+            border-radius: 2px;
+            height: 50px;
+        }
+
+        &--checkbox {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            margin-right: 25px;
+        }
+
+        &--taskitem {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: $main-text;
+            cursor: pointer;
+        }
+
+    }
+
+    &__taskbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 5px;
+        margin: 0 10px;
+
+        &--task {
+            display: flex;
+            justify-content: flex-start;
+            text-align: left;
+            min-width: 40%;
+        }
+
+        &--input {
+            height: 20px;
+            width: 100%;
+            border: none;
+            padding: 5px 10px;
+            background-color: $input-bg;
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+
+        &--btnbox {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            width: 100%;
+        }
+
+        &--btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $details;
+            color: $card-bg;
+            border: none;
+            border-radius: 2px;
+            padding: 5px 10px;
+            width: 50px;
+            height: 30px;
+            cursor: pointer;
+            color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+        }
+    }
+}
+
+.btn-edit {
+    background-color: $edit-btn;
+
+}
+
+.btn-delete {
+    background-color: $delete-btn;
+}
+
+.btn-save {
+    background-color: $save-btn;
+}

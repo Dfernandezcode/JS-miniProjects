@@ -1,0 +1,48 @@
+@import "../../utils/_variables.scss";
+
+
+.new-item-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $card-bg;
+    border-radius: 2px;
+    height: 50px;
+}
+
+;
+
+.add-task {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+
+    &__field {
+        height: 20px;
+        width: 100%;
+        border: none;
+        padding: 5px 10px;
+        background-color: $input-bg;
+        border-radius: 2px;
+    }
+
+    &__icon {
+        width: 20px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $details;
+        color: $card-bg;
+        border: none;
+        border-radius: 2px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-left: 10px;
+        box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+    }
+}
